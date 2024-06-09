@@ -29,7 +29,8 @@
 
     <Grid Style="{StaticResource InnerFrame}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
+            <RowDefinition PreviewMouseLeftButtonDown="Row_PreviewMouseLeftButtonDown"
+                           Height="30"/>
             <RowDefinition />
             <RowDefinition />
             <RowDefinition Height="25"/>
@@ -84,7 +85,7 @@
                  Grid.Column="1"
                  Grid.RowSpan="2"
                  Grid.ColumnSpan="2"
-                 DataContext="{Binding RelativeSource={RelativeSource AncestorType=Controls:SoundBoardView}}">
+                 >
            
         </Viewbox>
     </Grid>

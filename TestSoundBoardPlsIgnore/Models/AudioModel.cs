@@ -1,6 +1,6 @@
-﻿using System;
-using NAudio.Wave;
+﻿using NAudio.Wave;
 using NAudio.Wave.SampleProviders;
+using System;
 
 namespace TestSoundBoardPlsIgnore.Models
 {
@@ -8,28 +8,28 @@ namespace TestSoundBoardPlsIgnore.Models
 
 	public class AudioModel : IDisposable
 	{
-		private WaveInEvent waveIn;
-		private WaveOutEvent waveOut;
-		private MixingSampleProvider mixer;
-		private BufferedWaveProvider bufferedWaveProvider;
+		private WaveInEvent m_waveIn;
+		private WaveOutEvent m_waveOut;
+		private MixingSampleProvider m_mixer;
+		private BufferedWaveProvider m_bufferedWaveProvider;
 
-		public AudioModel()
+		public AudioModel(string _basePath)
 		{
-			waveIn = new WaveInEvent();
-			waveIn.WaveFormat = new WaveFormat(44100, 1);
-			waveIn.DataAvailable += OnDataAvailable;
+			m_waveIn = new WaveInEvent();
+			m_waveIn.WaveFormat = new WaveFormat(44100, 1);
+			m_waveIn.DataAvailable += OnDataAvailable;
 
-			waveOut = new WaveOutEvent();
-			waveOut.Init(mixer);
-			waveOut.Play();
+			m_waveOut = new WaveOutEvent();
+			m_waveOut.Init(m_mixer);
+			m_waveOut.Play();
 
-			bufferedWaveProvider = new BufferedWaveProvider(waveIn.WaveFormat);
-			mixer.AddMixerInput(bufferedWaveProvider);
+			m_bufferedWaveProvider = new BufferedWaveProvider(m_waveIn.WaveFormat);
+			m_mixer.AddMixerInput(m_bufferedWaveProvider);
 		}
 
 		private void OnDataAvailable(object sender, WaveInEventArgs e)
 		{
-			bufferedWaveProvider.AddSamples(e.Buffer, 0, e.BytesRecorded);
+			m_bufferedWaveProvider.AddSamples(e.Buffer, 0, e.BytesRecorded);
 		}
 
 		public void PlaySound(string filePath)
@@ -39,8 +39,8 @@ namespace TestSoundBoardPlsIgnore.Models
 
 		public void Dispose()
 		{
-			waveIn.Dispose();
-			waveOut.Dispose();
+			m_waveIn.Dispose();
+			m_waveOut.Dispose();
 		}
 	}
 }

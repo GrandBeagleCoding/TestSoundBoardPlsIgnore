@@ -14,9 +14,9 @@ namespace TestSoundBoardPlsIgnore.Utility
 		   
 		}
 
-		public bool GetHttpInputFromUser(string httpLink)
+		public bool GetHttpInputFromUser(string _httpLink)
 		{
-			if (string.IsNullOrEmpty(httpLink)) 
+			if (string.IsNullOrEmpty(_httpLink)) 
 				return false;
 
 

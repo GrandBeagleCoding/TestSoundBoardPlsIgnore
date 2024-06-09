@@ -6,7 +6,20 @@
              xmlns:local="clr-namespace:TestSoundBoardPlsIgnore.Views"
              mc:Ignorable="d" 
              d:DesignHeight="100" d:DesignWidth="100">
-    <Grid>
-            
-    </Grid>
+
+    <Border BorderBrush="#444444"
+            BorderThickness="2"
+            CornerRadius="25"
+            Background="#444444">
+        <Grid Width="82"
+              Height="82">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Image Source="/Resources/Icons/icons8-exit-48.png" />
+            <TextBlock Grid.Row="1"
+                       />
+        </Grid>
+    </Border>
 </UserControl>

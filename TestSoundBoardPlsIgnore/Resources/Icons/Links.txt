@@ -4,3 +4,5 @@
 <a target="_blank" href="https://icons8.com/icon/08ezsKYQLKBf/minimize-window">minimize</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>, minimize filled
 <a target="_blank" href="https://icons8.com/icon/VEypo7iAHEdc/automatic">Settings</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>, settings
 <a target="_blank" href="https://icons8.com/icon/tM9x8XPpc80J/automatic">Settings</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>, settings filled
+<a target="_blank" href="https://icons8.com/icon/41562/sound">Sound</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>, sound icon 1
+<a target="_blank" href="https://icons8.com/icon/100634/audio-wave">Sound</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>, sound icon 2

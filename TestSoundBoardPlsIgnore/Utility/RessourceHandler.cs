@@ -6,32 +6,32 @@ namespace TestSoundBoardPlsIgnore.Utility
 	//TODO: Implement further loading functions for icons for the different Buttons maybe
 	public static class RessourceHandler
 	{
-		public static bool LoadMP3File(string filename) 
+		public static bool LoadMP3File(string _filename) 
 		{
 			return true;
 		}
 
-		public static bool LoadWAVFile(string filename) 
+		public static bool LoadWAVFile(string _filename) 
 		{
 			return true;
 		}
 
-		public static bool SaveMP3File(string filename) 
+		public static bool SaveMP3File(string _filename) 
 		{
 			return true;
 		}
 
-		public static bool SaveWAVFile(string filename)
+		public static bool SaveWAVFile(string _filename)
 		{
 			return true;
 		}
 
-		public static bool Save(string filename)
+		public static bool Save(string _filename)
 		{
 			return true;
 		}
 
-		public static bool Load(string filename)
+		public static bool Load(string _filename)
 		{
 			return true;
 		}

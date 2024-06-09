@@ -155,7 +155,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -177,12 +176,17 @@
     <Resource Include="Resources\Icons\icons8-minimize-48.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Resources\AvailableSounds\" />
+    <Folder Include="Resources\LoadedSounds\" />
     <Folder Include="Resources\Scripts\" />
-    <Folder Include="Resources\Sounds\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Resources\Icons\icons8-settings-48%28filled%29.png" />
     <Resource Include="Resources\Icons\icons8-settings-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icons\icons8-sound-30.png" />
+    <Resource Include="Resources\Icons\icons8-sound-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
