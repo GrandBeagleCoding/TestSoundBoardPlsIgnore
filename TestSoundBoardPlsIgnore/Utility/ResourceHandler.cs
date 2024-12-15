@@ -4,7 +4,7 @@ namespace TestSoundBoardPlsIgnore.Utility
 	//TODO: Implement Loading functions for MP3 and WAV format files(Maybe reduce the functionality depending on usecase)
 	
 	//TODO: Implement further loading functions for icons for the different Buttons maybe
-	public static class RessourceHandler
+	public static class ResourceHandler
 	{
 		public static bool LoadMP3File(string _filename) 
 		{
